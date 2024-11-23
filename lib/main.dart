@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_shoppig_app/pages/cart_page.dart';
 import 'package:minimal_shoppig_app/pages/intro_page.dart';
 import 'package:minimal_shoppig_app/pages/shope_page.dart';
 import 'package:minimal_shoppig_app/themes/light_mode.dart';
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
       theme: lightMode,
       routes: {
         '/intro_page': (context) => IntroPage(),
-        '/shop_page': (context) => ShopePage()
+        '/shop_page': (context) => ShopePage(),
+        '/cart_page': (context) => CartPage()
       },
     );
   }
