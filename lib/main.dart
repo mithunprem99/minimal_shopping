@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:minimal_shoppig_app/models/shop.dart';
 import 'package:minimal_shoppig_app/pages/cart_page.dart';
 import 'package:minimal_shoppig_app/pages/intro_page.dart';
 import 'package:minimal_shoppig_app/pages/shope_page.dart';
 import 'package:minimal_shoppig_app/themes/light_mode.dart';
+import 'package:provider/provider.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => Shop(),
+    child: MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
