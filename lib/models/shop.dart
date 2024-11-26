@@ -8,23 +8,28 @@ class Shop extends ChangeNotifier {
         name: "Product 1 ",
         price: 99.99,
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "),
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
+        imagePath: "assets/shirt.jpeg"),
     ProductModel(
         name: "Product 2 ",
         price: 99.99,
-        description: "Product description 2........"),
+        description: "Product description 2........",
+        imagePath: "assets/shoe.jpeg"),
     ProductModel(
         name: "Product 3 ",
         price: 99.99,
-        description: "Product description 3........"),
+        description: "Product description 3........",
+        imagePath: "assets/hoddiee.jpeg"),
     ProductModel(
         name: "Product 4 ",
         price: 99.99,
-        description: "Product description 4........"),
+        description: "Product description 4........",
+        imagePath: "assets/watch.jpeg"),
     ProductModel(
         name: "Product 5 ",
         price: 99.99,
-        description: "Product description 5........")
+        description: "Product description 5........",
+        imagePath: "assets/specs.jpeg")
   ];
 
   //user cart

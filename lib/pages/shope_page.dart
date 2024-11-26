@@ -17,13 +17,18 @@ class ShopePage extends StatelessWidget {
         backgroundColor: Colors.grey,
         elevation: 3,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("Minimal Shopping"),
+        title: const Text("Minimal Shopping"),
+        actions: [
+          IconButton(
+              onPressed: () => Navigator.pushNamed(context, '/cart_page'),
+              icon: Icon(Icons.shopping_cart_outlined))
+        ],
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
       body: Column(
         children: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
+          const Padding(
+            padding: EdgeInsets.all(8.0),
             child: Center(
               child: Text(
                 "Pick from the premium quality products",
@@ -35,7 +40,7 @@ class ShopePage extends StatelessWidget {
             height: 550,
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                padding: EdgeInsets.all(20),
+                padding: const EdgeInsets.all(20),
                 itemCount: products.length,
                 itemBuilder: (context, index) {
                   final product = products[index];
