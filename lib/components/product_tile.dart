@@ -33,7 +33,7 @@ class ProductTile extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10)),
                     width: double.infinity,
                     padding: const EdgeInsets.all(25),
-                    child: const Icon(Icons.favorite)),
+                    child: Image.asset(product.imagePath)),
               ),
               const SizedBox(
                 height: 10,
